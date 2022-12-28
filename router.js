@@ -22,3 +22,4 @@ module.exports=function(app){
        .get(shoppingCartController.getById)
        .delete(shoppingCartController.delete);
 };
+
