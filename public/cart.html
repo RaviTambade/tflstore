@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transflower Store</title>
+        <link rel="stylesheet" href="styles/style.css"/>
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/cart.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to Transflowers</h1>
+        <a href="/catalog.html">Gallery</a> |  <a href="/about.html">About us</a> |  <a href="/contact.html">Contact us</a> |  <a href="/login.html">Sign In</a> | 
+        <hr/>
+        <h3>My Shopping Cart</h3>
+        <hr/>
+        <ul id="cartlist">
+
+        </ul>
+        <hr/>
+        <form>
+            <table>
+                <tr>
+                    <td>Product Identifier:</td>
+                    <td><input type="text" id="txtid" name="txtid" required></td>
+                </tr>
+                <tr>
+                    <td>Product Quantity:</td>
+                    <td><input type="number" id="txtquantity" name="txtid" required></td>
+                </tr>
+                <tr>
+                    <td><input type="button" onclick="addToCart()" value="Add to cart"></td>
+                    <td><input type="button" onclick="removeFromCart()" value="Remove from cart"></td>
+                    <td><input type="button" onclick="showAll()" value="refresh"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

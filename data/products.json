@@ -1,0 +1,10 @@
+[
+    {"id":1,"title":"Jasmine", "description":"Smelling Flower", "unitprice":12, "quantity":2300, "imageurl":"/images/jasmine.jpg"},
+    {"id":2,"title":"Gerbera", "description":"Wedding Flower", "unitprice":22, "quantity":2100,"imageurl":"/images/gerbera.jpg"},
+    {"id":3,"title":"Carnation", "description":"Beautiful Flower",  "unitprice":12,"quantity":1800,"imageurl":"/images/carnation.jpg"},
+    {"id":4,"title":"Lily", "description":"Delicate Flower", "unitprice":15, "quantity":2300,"imageurl":"/images/lily.jpg"},
+    {"id":5,"title":"Marigold", "description":"Festival Flower", "unitprice":10, "quantity":5000,"imageurl":"/images/marigold.jpg"},
+    {"id":6,"title":"Lotus", "description":"Worship Flower", "unitprice":2, "quantity":7000,"imageurl":"/images/lotus.jpg"},
+    {"id":7,"title":"Dahlia", "description":"Exotic Flower", "unitprice":2, "quantity":3500,"imageurl":"/images/dahlia.jpg"},
+    {"id":8,"title":"Rose", "description":"Valentine Flower", "unitprice":2, "quantity":4200,"imageurl":"/images/rose.jpg"}
+]
