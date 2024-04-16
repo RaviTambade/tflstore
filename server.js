@@ -45,3 +45,5 @@ app.get("/", (req, res)=>{
 
 app.listen(8000);
 console.log("ShoppingCart Web App is listening on port 8000");
+
+module.exports = app;

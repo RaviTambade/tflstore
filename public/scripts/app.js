@@ -3,7 +3,7 @@ $(document).ready(function(){
     if(typeof(JSON) == 'object')
     {          
         $.ajax({
-            url: '/products',
+            url: '/flowers',
             type: 'GET',
             contentType: 'application/json',
             success: function(result)

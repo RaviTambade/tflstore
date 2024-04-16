@@ -4,7 +4,7 @@ $(document).ready(function(){
      if(typeof(JSON) == 'object')
      {
          $.ajax({
-             url: '/products/'+btnId,
+             url: '/flowers/'+btnId,
              type: 'GET',
              contentType: 'application/json',
              success: function(result)

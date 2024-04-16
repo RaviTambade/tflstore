@@ -1,13 +1,27 @@
 
 var flowersController=require('./controllers/flowerscontroller');
 var shoppingCartController=require('./controllers/shoppingcartcontroller');
+const productsController = require('./controllers/productscontroller');
+
+
+
 module.exports=function(app){
 
    // map  product catalog handlers with  REST request types
-    app.route('/products')
+
+   app.route('/products')
+      .get(productsController.getAllProducts)
+      .post(productsController.createProduct);
+      
+      app.route('/products/:id')
+      .get( productsController.getProductById)
+      .put(productsController.updateProduct)
+      .delete(productsController.deleteProduct);
+
+    app.route('/flowers')
        .get(flowersController.getAll)
        .post(flowersController.insert);
-    app.route('/products/:flowerid')
+    app.route('/flowers/:flowerid')
        .put(flowersController.update)
        .get(flowersController.getById)
        .delete(flowersController.delete);
