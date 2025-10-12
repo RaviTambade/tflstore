@@ -1,24 +1,54 @@
 pipeline {
     agent any
-    
+
+    tools {
+        // Specify the Node.js toolchain configured in Jenkins global tool configuration
+        nodejs 'node-18' // Replace 'node-18' with your Node.js installation name
+    }
+
     stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/RaviTambade/tflstore.git' // Replace with your repo details
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
+
         stage('Build') {
             steps {
-                // Example: Run a shell command
-                sh 'echo "Building..."'
+                sh 'npm run build' // If you have a build script
             }
         }
+
         stage('Test') {
             steps {
-                // Example: Run unit tests
-                sh 'echo "Testing..."'
+                sh 'npm test' // Run your tests
             }
         }
+
         stage('Deploy') {
             steps {
-                // Example: Deploy to a server
-                sh 'echo "Deploying..."'
+                // Example: Deploy to a server using SSH or push to a container registry
+                echo 'Deploying application...'
+                // sh 'scp -r build/* user@your-server:/var/www/your-app'
             }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline finished.'
+        }
+        success {
+            echo 'Pipeline succeeded!'
+        }
+        failure {
+            echo 'Pipeline failed!'
         }
     }
 }
