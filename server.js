@@ -4,6 +4,7 @@ var session =require('express-session');
 var parseurl=require('parseurl');
 var path=require('path');
 var bodyParser=require('body-parser');
+var cors=require('cors');
 
 const app=express();
 //configure HTTP pipeline 
@@ -11,6 +12,7 @@ const app=express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
+app.use(cors());
 //Session Memory Configuration
 var sessionOptions={
    secret:"secret",

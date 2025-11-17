@@ -18,6 +18,9 @@ exports.insert=function(req, res){
     console.log(data);
     console.log("POST request is being processed...");
     //append this data to flowers array maintained in json file
+
+    flowers.push(data);
+    
 };
 
 exports.update=function(req,res){

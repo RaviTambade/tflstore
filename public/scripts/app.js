@@ -1,7 +1,11 @@
 $(document).ready(function(){
      
     if(typeof(JSON) == 'object')
-    {          
+    {    
+        //fetch();
+        //External  Data Access usign jQuery function
+        //$.ajax()......
+
         $.ajax({
             url: '/flowers',
             type: 'GET',
