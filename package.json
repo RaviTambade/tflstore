@@ -9,11 +9,13 @@
   "author": "Ravi Tambade",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^3.0.3",
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "express-session": "^1.17.3",
     "jest": "^29.7.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^6.8.1",
     "mysql": "^2.18.1",
     "supertest": "^6.3.4"
