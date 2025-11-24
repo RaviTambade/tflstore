@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Ravi", "age": 28, "gender": "Male", "city": "Pune" },
+  { "id": 2, "name": "Neha", "age": 34, "gender": "Female", "city": "Mumbai" },
+  { "id": 3, "name": "Arjun", "age": 22, "gender": "Male", "city": "Delhi" }
+]

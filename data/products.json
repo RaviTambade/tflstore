@@ -46,5 +46,10 @@
     "price": 4,
     "likes": 56000,
     "imageurl": "/assets/images/marigold.jpg"
+  },
+  {
+    "username": "ravi",
+    "password": "pass123",
+    "role": "Admin"
   }
 ]

@@ -54,8 +54,11 @@ exports.login = (req, res) => {
 
     const users = readUsers();
 
+    console.log(username + "  "+ password);
+
+
     const user = users.find(u => u.username === username);
-    if (!user) {
+   /* if (!user) {
         return res.status(404).send({ message: "User Not Found" });
     }
 
@@ -74,6 +77,7 @@ exports.login = (req, res) => {
         SECRET_KEY,
         { expiresIn: "1h" }
     );
+*/
 
     res.send({
         message: "Login Successful",
