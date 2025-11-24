@@ -2,13 +2,13 @@
    {
       "id": 1,
       "username": "admin",
-      "password": "$2a$08$K7tBn4ucx1xkV5SxY4E5AOCwhC5RrIiJ9Y.xu7.xtGzZevtyUHrMK",
+      "password": "admin",
       "role": "Admin"
    },
    {
       "id": 2,
       "username": "ravi",
-      "password": "$2b$08$vK2lRmm5pmw4.hjSxL/XAO11PTli6WFDmsFDVZBPSYc2HS9LiqccC",
+      "password": "seed",
       "role": "Admin"
    }
 ]
